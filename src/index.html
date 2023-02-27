@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Check Your Balance</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <style>
+        body {
+            background-color: #36393f;
+        }
+    </style>
+
+    <body class="bg-gray-900 text-white text-center flex h-screen">
+        <div class="max-w-2xl m-auto">
+            <h1 class="text-3xl mb-4 font-semibold">Check Your Balance</h1>
+            <p class="text mt-5 mb-5">This webpage uses a <a class="text-sky-500" href="https://chainstack.com" target="_blank">Chainstack</a> Ethereum RPC endpoint to retrieve the balance of an address.</p>
+            <p class="text mt-5 mb-10">The idea of this app is to teach you how to properly protect your API keys!</p>
+            <p class="text font-semibold text-white mt-5 mb-10 border rounded p-3">Inspecting the source code, you will notice that you won't find any API key or endpoint URL in the front end; you will find instead a connection to a back-end proxy server where the endpoint URL is safely stored. This is a simple way to protect your endpoint URL.</p>
+
+            <input id="address" type="text" class="border rounded p-2 mb-5 text-black w-96" placeholder="Enter Ethereum Address" />
+            <button onclick="fetchBalance()" class="bg-blue-500 text-white rounded p-2 mb-10">Check Balance</button>
+            <p id="balance" class="text-2xl mb-4 border rounded pt-2 pb-2">The balance will be shown here </p>
+
+            <div class="mt-20">
+                <span class=" w-80 mb-5 text-xl text-center font-semibold mt-15 px-10 py-4 border-2 border-slate-300 text-slate-200 bg-black font-medium text-xs leading-tight uppercase rounded-full hover:bg-slate-600 hover:bg-opacity-4 hover:text-slate-100 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <a href="https://github.com/soos3d/node-api-proxy-server" target="_blank">Find the repository on GitHub</a>
+                </span>
+            </div>
+
+        </div>
+    </body>
+
+</html>
