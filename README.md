@@ -25,8 +25,8 @@
 
 This project shows how to protect your RPC URL by creating a back-end server where you store the endpoint. Then, when you click the button to check the balance, the front end will send a request to the back-end server using the `eth_getBalance` method via the `web3.js` library. 
 
-Read the full guide on the Chainstack developer portal
-* []()
+Read the full guide on the Chainstack developer portal:
+* [How to store your Web3 DApp secrets: Guide to environment variables](https://docs.chainstack.com/docs/how-to-store-your-web3-dapp-secrets-guide-to-environment-variables)
 
 ## Project details
 
@@ -77,28 +77,3 @@ Deploy a node with Chainstack:
 1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create).  
 1. [Deploy a node](https://docs.chainstack.com/platform/join-a-public-network).  
 1. [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials). 
-
-## Dependencies
-
-* cors: ^2.8.5
-* dotenv: ^16.0.3
-* express: ^4.18.2
-* express-rate-limit: ^6.7.0
-* web3: ^1.8.1
-* nodemon: ^2.0.20
-
-## Install
-
-Clone this repository
-
-```sh
-git clone https://github.com/soos3d/node-proxy-server-to-protect-your-rpc-url-endpoint.git
-```
-
-Install dependencies
-
-```sh
-npm ci
-```
-
-> Use `npm ci` to launch a `clean install` of the dependencies, this will install the same version as in the `package.json` file.
