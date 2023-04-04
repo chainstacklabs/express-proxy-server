@@ -60,10 +60,10 @@ Run the server in dev mode with:
 npm run dev
 ```
 
-The server is now running on `http://localhost:5000/`. You can send balance requests to your server with the following:
+The server is now running on `http://localhost:3000/`. You can send balance requests to your server with the following:
 
 ```sh
-curl --location 'http://localhost:5000/balance' \
+curl --location 'http://localhost:3000/balance' \
 --header 'Content-Type: application/json' \
 --data '{"address":"0xc457C11e2d7b6Ed68516CdED897c2Ab9F41e022C"}'
 ```
