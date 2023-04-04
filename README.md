@@ -54,13 +54,21 @@ Install  dependencies:
 npm install
 ```
 
-Run page in dev mode with:
+Run the server in dev mode with:
 
 ```sh
 npm run dev
 ```
 
-The page is now running in `http://localhost:5000/`. Open it in your browser to see it, then:
+The server is now running on `http://localhost:5000/`. You can send balance requests to your server with the following:
+
+```sh
+curl --location 'http://localhost:5000/balance' \
+--header 'Content-Type: application/json' \
+--data '{"address":"0xc457C11e2d7b6Ed68516CdED897c2Ab9F41e022C"}'
+```
+
+You will also find a basic front end in the `src` directory. You can run it in your browser and test the proxy server.
 
 1. Insert the address you want to query in the input field.
 1. Click **Check balance** to send a request to your RPC node and retrieve the address' balance.
